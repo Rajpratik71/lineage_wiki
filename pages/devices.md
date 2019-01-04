@@ -32,7 +32,7 @@ redirect_from: devices.html
   {% else %}{% assign deviceName = device.name %}
   {% endif %}
   {% assign url = "devices/" | append: device.codename | relative_url %}
-  {% if device.maintainers == null %}{% assign maintainerNames = No longer maintained %}
+  {% if device.maintainers == blank %}{% assign maintainerNames = No longer maintained %}
   {% else %}{% assign maintainerNames = device.maintainers %}
   {% endif %}
   <tr>
