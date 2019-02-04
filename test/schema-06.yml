@@ -202,6 +202,10 @@ properties:
     - Krait 400
     - Krait 450
     - Kryo
+    - Kryo 260
+    - Kryo 280
+    - Kryo 360
+    - Kryo 385
   cpu_cores:
     "$id": "/properties/cpu_cores"
     minLength: 1
@@ -258,6 +262,8 @@ properties:
     - Adreno 512
     - Adreno 530
     - Adreno 540
+    - Adreno 616
+    - Adreno 630
     - GK20A (Kepler)
     - GM20B (Maxwell)
     - NVIDIA Kepler DX1 192-core
@@ -290,6 +296,9 @@ properties:
     - fastboot_xiaomi
     - fastboot_zenfone
     - heimdall
+  is_unlockable:
+    "$id": "/properties/is_unlockable"
+    type: boolean
   kernel:
     "$id": "/properties/kernel"
     pattern: ^(android_kernel(_\w*){2}(-common)?|lge-kernel-\w*)$
