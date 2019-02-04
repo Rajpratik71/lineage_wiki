@@ -1,0 +1,46 @@
+architecture: arm
+battery: {removable: True, capacity: 1500}
+bluetooth: {spec: 4.0 + HS}
+cameras:
+- {flash: '', info: '5 MP w/ LED-flash'}
+- {flash: '', info: '1.9 MP'}
+carrier:
+channels: [weekly]
+codename: i8200n
+cpu: Cortex-A9
+cpu_cores: '2'
+cpu_freq: 1.2 GHz
+current_branch: 14.1
+depth:
+download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Home</kbd> + <kbd>Power</kbd>.
+gpu: ARM Mali-400 MP
+height:
+image: i8200n.png
+install_method: heimdall
+kernel: android_kernel_samsung_smdk4412
+maintainers: [lysergic_acid]
+models: [GT-I8200n]
+name:  Galaxy S III mini VE
+network:
+- {tech: 2G, bands: '850 900 1800 1900 MHz GSM'}
+- {tech: 3G, bands: '900 1900 2100 MHz HSPA+'}
+- {tech: 4G, bands: ''}
+no_oem_unlock_switch: true
+peripherals: None
+ram: 1 GB
+recovery_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Home</kbd> + <kbd>Power</kbd>.
+release: 2014-04-1
+screen: 101.6 mm (4.0 in)
+screen_ppi: 233
+screen_res: 480x800
+screen_tech:
+sdcard: up to 32 GB
+soc: Samsung NovaThor U8420 
+storage: 8/16 GB
+tree: android_device_samsung_i8200n
+type: phone
+vendor: Samsung
+vendor_short: samsung
+versions: [14.1]
+width:
+wifi: 802.11 a/b/g/n
