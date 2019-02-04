@@ -74,6 +74,11 @@ There are no recovery install instructions for this discontinued device.
 11. Once installation has finished, return to the main menu, tap **Reboot**, and then **System**.
 {% endif %}
 
+{% if device.vendor == "Xiaomi" %}
+{% capture install_note %}templates/install_note_{{ device.vendor | downcase }}.md{% endcapture %}
+{% include warning.html content=install_note %}
+{% endif %}
+
 ## Get assistance
 
 If you have any questions or get stuck on any of the steps, feel free to ask on [our subreddit](https://reddit.com/r/LineageOS) or in
