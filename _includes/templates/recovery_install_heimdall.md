@@ -15,17 +15,17 @@ The preferred method of installing a custom recovery is through this boot mode{%
 {% endunless %}
 2. Download and install the [Heimdall suite](http://glassechidna.com.au/heimdall/#downloads):
     * **Windows**: Extract the Heimdall suite and take note of the directory containing `heimdall.exe`. You can verify Heimdall is working by opening a command
-    prompt in that directory and typing `heimdall version`. If you receive an error, make sure you have the 
+    prompt in that directory and typing `heimdall version`. If you receive an error, make sure you have the
     [Microsoft Visual C++ 2012 Redistributable Package (x86)](https://www.microsoft.com/en-us/download/details.aspx?id=30679) installed on your computer.
     * **Linux**: Pick the appropriate package to install for your distribution. The `-frontend` packages aren't needed for this guide. After installation,
-    verify Heimdall is installed by running `heimdall version` in the terminal.
+    verify Heimdall is installed by running `heimdall version` in the terminal. In ubuntu-based distributions, you should just type `sudo apt install heimdall-flash heimdall-flash-frontend`.
     * **macOS**: Install the `dmg` package. After installation, Heimdall should be available from the terminal - type `heimdall version` to double-check.
 3. Power off the device and connect the USB adapter to the computer (but not to the device, yet).
 4. Boot into download mode:
 
     * {{ site.data.devices[page.device].download_boot }}
 
-    Accept the disclaimer, then insert the USB cable into the device.
+    Accept the disclaimer (volume up), then insert the USB cable into the device.
 5. **Windows only**: install the drivers. A more complete set of instructions can be found in the [ZAdiag user guide](https://github.com/pbatard/libwdi/wiki/Zadig).
     1. Run `zadiag.exe` from the **Drivers** folder of the Heimdall suite.
     2. Choose **Options** &raquo; **List all devices** from the menu.
