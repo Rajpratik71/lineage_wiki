@@ -32,7 +32,7 @@ run the following:
 
 ```
 breakfast <codename>
-mka target-files-package dist otatools
+mka target-files-package otatools
 ```
 
 Sit back and wait for a while - it may take a while depending on your computer's specs. After
@@ -41,7 +41,7 @@ it's finished, you just need to sign all the APKs:
 ```
 croot
 ./build/tools/releasetools/sign_target_files_apks -o -d ~/.android-certs \
-    out/dist/*-target_files-*.zip \
+    $OUT/obj/PACKAGING/target_files_intermediates/*-target_files-*.zip \
     signed-target_files.zip
 ```
 
@@ -67,6 +67,11 @@ on all packages at every boot. Install them for as little time as possible." %}
 
 You can set up your own migration builds by running:
 
+LineageOS 16.0:
+```
+repopick 239520
+```
+
 LineageOS 15.1:
 ```
 repopick -f 192655 -P vendor/lineage
@@ -83,6 +88,12 @@ Then, follow the [instructions to generate an install package](#generating-an-in
 #### Going back
 
 After installing the migration build, you can switch back to building normal builds:
+
+LineageOS 16.0:
+```
+cd frameworks/base
+git reset --hard github/lineage-16.0
+```
 
 LineageOS 15.1:
 ```

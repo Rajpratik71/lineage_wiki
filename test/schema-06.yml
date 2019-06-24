@@ -57,6 +57,7 @@ definitions:
     - 13.0
     - 14.1
     - 15.1
+    - 16.0
     type: number
   valid_peripherals:
     description: All valid peripherals a device can have
@@ -71,6 +72,8 @@ definitions:
       - Dual SIM
       - Dual front speakers
       - Dual side NFC
+      - Dual-frequency GNSS
+      - Essential Accessories
       - FM radio
       - Fingerprint reader
       - GLONASS
@@ -83,6 +86,7 @@ definitions:
       - Heart rate sensor
       - Hygrometer
       - IR blaster
+      - IR camera
       - Iceview Cases
       - Infrared sensor
       - Light sensor
@@ -100,6 +104,7 @@ definitions:
       - SNS integration
       - Sensor hub
       - Thermometer
+      - Ultrasound proximity sensor
       - USB OTG
       - Wi-Fi Display
       type: string
@@ -191,6 +196,7 @@ properties:
     - Cortex-A57
     - Cortex-A7
     - Cortex-A72
+    - Cortex-A73 & Cortex-A53
     - Cortex-A9
     - Denver
     - Exynos M1 & Cortex-A53
@@ -236,6 +242,7 @@ properties:
     enum:
     - ARM Mali-400 MP
     - ARM Mali-400 MP4
+    - ARM Mali-G72 MP12
     - ARM Mali-G72 MP18
     - ARM Mali-T604
     - ARM Mali-T628 MP6
@@ -367,6 +374,7 @@ properties:
     - ARK
     - Asus
     - BQ
+    - Essential
     - Fairphone
     - Google
     - HTC
@@ -394,6 +402,7 @@ properties:
     - ark
     - asus
     - bq
+    - essential
     - fairphone
     - google
     - htc

@@ -6,6 +6,9 @@
 {% if device.is_unlockable == false %}
 {% include alerts/warning_bootloader_not_unlockable.html %}
 {% endif %}
+{% if device.multiple_versions_reason|length %}
+{% include alerts/ships_multiple_versions.html %}
+{% endif %}
 
 ## Get LineageOS for the {{ device.vendor }} {{ device.name }}
 {% if device.maintainers != empty %}
@@ -17,6 +20,15 @@
 
 ### Build guide
 [How to build LineageOS for the {{ device.vendor }} {{ device.name }}]({{ "devices/" | append: device.codename | append: "/build" | relative_url }})
+
+### Update guide
+[How to update LineageOS on the {{ device.vendor }} {{ device.name }}]({{ "devices/" | append: device.codename | append: "/update" | relative_url }})
+
+{% assign versions_count = device.versions|size -%}
+{%- if versions_count > 1 -%}
+### Upgrade guide
+[How to upgrade LineageOS on the {{ device.vendor }} {{ device.name }}]({{ "devices/" | append: device.codename | append: "/upgrade" | relative_url }})
+{%- endif -%}
 
 {% if device.note_show and device.note_show == true %}
 {% include templates/device_info_note.md %}

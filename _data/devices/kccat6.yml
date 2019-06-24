@@ -10,14 +10,14 @@ codename: kccat6
 cpu: Krait 450
 cpu_cores: '4'
 cpu_freq: 2.5 GHz
-current_branch: 15.1
+current_branch: 16.0
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Home</kbd> + <kbd>Power</kbd>.
   In order to exit download mode and reboot, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd> for about 7 seconds.
 gpu: Adreno 420
 image: klte.png
 install_method: heimdall
 kernel: android_kernel_samsung_apq8084
-maintainers: [cvxda]
+maintainers: [cvxda, sassmann]
 models: [SM-G901F]
 name: Galaxy S5 Plus
 network:
@@ -41,5 +41,5 @@ tree: android_device_samsung_kccat6
 type: phone
 vendor: Samsung
 vendor_short: samsung
-versions: [14.1, 15.1]
+versions: [14.1, 15.1, 16.0]
 wifi: 802.11 a/b/g/n/ac
