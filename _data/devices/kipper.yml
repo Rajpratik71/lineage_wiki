@@ -4,10 +4,9 @@ bluetooth: {spec: 4.0 + LE, profiles: [A2DP]}
 cameras:
 - {flash: 'LED', info: '20 MP'}
 - {flash: 'LED', info: '8 MP'}
-carrier:
 channels: [nightly]
 codename: kipper
-cpu: Cortex-A53
+cpu: 64-bit Cortex A53
 cpu_cores: '8'
 cpu_freq: 1.5 GHz
 current_branch: 15.1
@@ -15,6 +14,7 @@ custom_twrp_link: https://androidfilehost.com/?fid=673791459329072211
 depth: 9.2 mm (0.36 in)
 download_boot: With the device powered off, hold <kbd>Volume Up</kbd> and connect the USB cable.
 gpu: Adreno 405
+has_recovery_partition: true
 height: 155.6 mm (6.12 in)
 image: kipper.png
 install_method: fastboot_nexus
