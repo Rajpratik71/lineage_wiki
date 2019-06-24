@@ -93,6 +93,10 @@ For Ubuntu versions older than 16.04 (xenial), substitute:
 
 * `libwxgtk3.0-dev` → `libwxgtk2.8-dev`
 
+For Ubuntu versions newer than 18.10 (cosmic), substitute:
+
+* `python` → `python-minimal`
+
 For Debian 8 (aka Jessie) or newer use:
 
 * `lib32ncurses5-dev` → `libncurses5-dev:i386`
@@ -140,7 +144,11 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 ```
 
-Put the `~/bin` directory in your path of execution to make `repo` easy to use.  In recent versions of Ubuntu, `~/bin` should already be in your PATH. You can check this by opening `~/.profile` with a text editor and verifying the following code exists (add it if it is missing):
+### Force `repo` to use python2.7 to remove errors
+
+In recent versions of Ubuntu, python3 is default. Go to `~/bin/repo` then open repo with text editor and edit `#!/usr/bin/env python` to `#!/usr/bin/env python2.7` to avoid errors.
+
+### Put the `~/bin` directory in your path of execution
 
 ```
 # set PATH so it includes user's private bin if it exists
