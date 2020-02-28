@@ -4,14 +4,13 @@ bluetooth: {spec: '4.0'}
 cameras:
 - {flash: 'LED', info: '13 MP'}
 - {flash: '', info: '8 MP'}
-carrier:
 channels: [nightly]
 codename: f1f
 cpu: Cortex-A53
 cpu_cores: '8'
 cpu_freq: 1.5 GHz and 1.0 GHz
 current_branch: 16.0
-custom_twrp_link: https://androidfilehost.com/?fid=1395089523397922613
+custom_recovery_link: https://androidfilehost.com/?fid=1395089523397922613
 depth: 7.3 mm (0.29 in)
 download_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Power</kbd>.
 gpu: Adreno 405

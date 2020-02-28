@@ -1,20 +1,17 @@
 architecture: arm
-battery: {removable: True, capacity: 1650}
+battery: {removable: True, capacity: 1650, tech: 'Li-Ion'}
 bluetooth: {spec: 3.0 + HS}
 cameras:
 - {flash: 'yes', info: '8 MP'}
 - {flash: '', info: '1.9 MP'}
-carrier:
 channels: [discontinued]
 codename: i9100
 cpu: Cortex-A9
 cpu_cores: '2'
 cpu_freq: 1.2 GHz
 current_branch: 14.1
-depth:
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Home</kbd> + <kbd>Power</kbd>.
 gpu: ARM Mali-400 MP
-height:
 image: i9100.png
 install_method: heimdall
 kernel: android_kernel_samsung_smdk4412
@@ -24,7 +21,6 @@ name: Galaxy S II
 network:
 - {tech: 2G, bands: '850 900 1800 1900 MHz GSM'}
 - {tech: 3G, bands: '850 900 1900 2100 MHz HSPA+'}
-- {tech: 4G, bands: ''}
 no_oem_unlock_switch: true
 peripherals: None
 ram: 1 GB
@@ -42,5 +38,4 @@ type: phone
 vendor: Samsung
 vendor_short: samsung
 versions: [14.1]
-width:
 wifi: 802.11 a/b/g/n

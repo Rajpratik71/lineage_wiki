@@ -32,6 +32,9 @@ definitions:
     - capacity
     - removable
     type: object
+  dimension_string:
+    pattern: ^\d+(\.\d+)? mm \(\d+(\.\d+)? in\)$
+    type: string
   iso8601_reduced_precision_date:
     description: Date in ISO8601 reduced precision format
     examples:
@@ -44,6 +47,23 @@ definitions:
     type:
     - integer
     - string
+  network_data:
+    description: The format required for network
+    properties:
+      tech:
+        description: The technology
+        enum:
+        - 2G
+        - 3G
+        - 4G
+      bands:
+        description: The supported bands for the given technology
+        minLength: 5
+        type: string
+    required:
+    - tech
+    - bands
+    type: object
   valid_architectures:
     enum:
     - arm
@@ -59,6 +79,19 @@ definitions:
     - 15.1
     - 16.0
     type: number
+  valid_dimension:
+    oneOf:
+    - "$ref": "#/definitions/dimension_string"
+    - description: Array of maps of model numbers dimension
+      examples:
+      - SM-9000A: 254 mm (10 in)
+      - SM-9000B:  127 mm (5 in)
+      items:
+        additionalProperties:
+          "$ref": "#/definitions/dimension_string"
+        description: Map of model number to dimension
+        type: object
+      type: array
   valid_peripherals:
     description: All valid peripherals a device can have
     items:
@@ -76,8 +109,13 @@ definitions:
       - Essential Accessories
       - FM radio
       - Fingerprint reader
+      - BeiDou
+      - Galileo
       - GLONASS
       - GPS
+      - NAVIC
+      - SBAS
+      - QZSS
       - Gesture sensor
       - Gyroscope
       - HDMI
@@ -170,6 +208,9 @@ properties:
     required:
     - spec
     type: object
+  carrier:
+    "$carrier": "/properties/carrier"
+    type: string
   channels:
     "$id": "/properties/channels"
     items:
@@ -212,6 +253,10 @@ properties:
     - Kryo 280
     - Kryo 360
     - Kryo 385
+    - Kryo 460
+    - Kryo 470
+    - Kryo 485
+    - Kryo 495
   cpu_cores:
     "$id": "/properties/cpu_cores"
     minLength: 1
@@ -226,17 +271,26 @@ properties:
   current_branch:
     "$id": "/properties/current_branch"
     "$ref": "#/definitions/valid_branches"
-  custom_twrp_link:
-    "$id": "/properties/custom_twrp_link"
+  custom_recovery_codename:
+    "$id": "/properties/custom_recovery_codename"
+    type: string
+  custom_recovery_link:
+    "$id": "/properties/custom_recovery_link"
     type: string
     pattern: ^https?:\/\/(.*)
   custom_unlock_cmd:
     "$id": "/properties/custom_unlock_cmd"
     minLength: 10
     type: string
+  depth:
+    "$id": "/properties/depth"
+    "$ref": "#/definitions/valid_dimension"
   download_boot:
     "$id": "/properties/download_boot"
     type: string
+  format_on_upgrade:
+    "$id": "/properties/format_on_upgrade"
+    type: boolean
   gpu:
     "$id": "/properties/gpu"
     enum:
@@ -246,6 +300,7 @@ properties:
     - ARM Mali-G72 MP18
     - ARM Mali-T604
     - ARM Mali-T628 MP6
+    - ARM Mali-T720 MP2
     - ARM Mali-T760 MP6
     - ARM Mali-T760 MP8
     - ARM Mali-T830 MP3
@@ -269,8 +324,16 @@ properties:
     - Adreno 512
     - Adreno 530
     - Adreno 540
+    - Adreno 605
+    - Adreno 610
+    - Adreno 612
+    - Adreno 615
     - Adreno 616
+    - Adreno 618
+    - Adreno 620
     - Adreno 630
+    - Adreno 640
+    - Adreno 680
     - GK20A (Kepler)
     - GM20B (Maxwell)
     - NVIDIA Kepler DX1 192-core
@@ -280,6 +343,9 @@ properties:
     - PowerVR SGX544MP2
     - PowerVR Series 6
     - Tegra 4
+  height:
+    "$id": "/properties/height"
+    "$ref": "#/definitions/valid_dimension"
   image:
     "$id": "/properties/image"
     pattern: ^\w*\.(png|jpg)$
@@ -299,10 +365,14 @@ properties:
     - fastboot_nexus
     - fastboot_oppo
     - fastboot_sony
+    - fastboot_realme
     - fastboot_unlocked
     - fastboot_xiaomi
     - fastboot_zenfone
     - heimdall
+  is_ab_device:
+    "$id": "/properties/is_ab_device"
+    type: boolean
   is_unlockable:
     "$id": "/properties/is_unlockable"
     type: boolean
@@ -317,10 +387,21 @@ properties:
   models:
     "$id": "/properties/models"
     type: array
+  multiple_versions_reason:
+    "$id": "/properties/multiple_versions_reason"
+    type: string
   name:
     "$id": "/properties/name"
     minLength: 1
     type: string
+  network:
+    "$id": "/properties/network"
+    oneOf:
+    - "$ref": "#/definitions/network_data"
+    - items:
+        "$ref": "#/definitions/network_data"
+        type: object
+      type: array
   peripherals:
     "$id": /properties/peripherals
     oneOf:
@@ -355,6 +436,12 @@ properties:
     "$id": "/properties/required_bootloader"
     minItems: 1
     type: array
+  screen:
+    "$id": "/properties/screen"
+    anyOf:
+    - "$ref": "#/definitions/valid_dimension"
+    - enum:
+      - None
   tree:
     "$id": "/properties/tree"
     pattern: ^android_device_(.*)$
@@ -368,6 +455,9 @@ properties:
     - phone
     - phone (slider)
     - tablet
+  uses_lineage_recovery:
+    "$id": "/properties/uses_lineage_recovery"
+    type: boolean
   vendor:
     "$id": "/properties/vendor"
     enum:
@@ -388,11 +478,14 @@ properties:
     - Nvidia
     - OPPO
     - OnePlus
+    - Razer
+    - Realme
     - Samsung
     - Sony
     - Wileyfox
     - Wingtech
     - Xiaomi
+    - Yandex
     - YU
     - ZTE
     - ZUK
@@ -417,11 +510,14 @@ properties:
     - nvidia
     - oneplus
     - oppo
+    - razer
+    - realme
     - samsung
     - sony
     - wileyfox
     - wingtech
     - xiaomi
+    - yandex
     - yu
     - zte
     - zuk
@@ -432,6 +528,9 @@ properties:
       "$ref": "#/definitions/valid_branches"
     minItems: 1
     type: array
+  width:
+    "$id": "/properties/width"
+    "$ref": "#/definitions/valid_dimension"
 required:
 - architecture
 - battery
@@ -450,6 +549,7 @@ required:
 - name
 - peripherals
 - release
+- screen
 - tree
 - type
 - vendor

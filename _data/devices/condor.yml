@@ -1,9 +1,8 @@
 architecture: arm
-battery: {removable: False, capacity: 1980}
+battery: {removable: False, capacity: 1980, tech: 'Li-Po'}
 bluetooth: {spec: '4.0'}
 cameras:
 - {flash: '', info: '5 MP'}
-carrier:
 channels: [discontinued]
 codename: condor
 cpu: Cortex-A7
@@ -22,7 +21,6 @@ name: Moto E
 network:
 - {tech: 2G, bands: '850 900 1800 1900 MHz GSM' }
 - {tech: 3G, bands: '850 900 1900 2100 MHz HSDPA' }
-- {tech: 4G, bands: '' }
 peripherals: [Accelerometer, Proximity sensor, Compass]
 ram: 1 GB
 recovery_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.

@@ -4,13 +4,12 @@ bluetooth: {spec: '4.2', profiles: [A2DP]}
 cameras:
 - {flash: 'LED', info: '13 MP'}
 - {flash: '', info: '5 MP'}
-carrier:
-channels: [weekly]
+channels: [nightly]
 codename: santoni
 cpu: Cortex-A53 & Cortex-A53
 cpu_cores: '8'
 cpu_freq: 4 x 1.4 GHz & 4 x 1.1 GHz
-current_branch: 15.1
+current_branch: 16.0
 depth: 8.7 mm (0.34 in)
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
   Keep holding both buttons until the word "FASTBOOT" appears on the screen, then release.
@@ -40,6 +39,6 @@ tree: android_device_xiaomi_santoni
 type: phone
 vendor: Xiaomi
 vendor_short: xiaomi
-versions: [15.1]
+versions: [15.1, 16.0]
 width: 70 mm (2.76 in)
 wifi: 802.11 b/g/n, Wi-Fi Direct, Hotspot

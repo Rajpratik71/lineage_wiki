@@ -4,7 +4,6 @@ bluetooth: {spec: '4.1'}
 cameras:
 - {flash: 'Dual LED', info: '13 MP'}
 - {flash: '', info: '2.1 MP '}
-carrier:
 channels: [nightly]
 codename: shamu
 cpu: Krait 450
@@ -38,6 +37,7 @@ soc: Qualcomm APQ8084 Snapdragon 805
 storage: 32/64 GB
 tree: android_device_moto_shamu
 type: phablet
+uses_lineage_recovery: true
 vendor: Google
 vendor_short: moto
 versions: [14.1, 15.1, 16.0]

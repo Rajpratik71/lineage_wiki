@@ -1,4 +1,5 @@
-{% unless site.data.devices[page.device].no_oem_unlock_switch %}
+{%- assign device = site.data.devices[page.device] %}
+{%- unless device.no_oem_unlock_switch %}
 ## Unlocking the bootloader
 
 {% include alerts/note.html content="The steps below only need to be run once per device." %}

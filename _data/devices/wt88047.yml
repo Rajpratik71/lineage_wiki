@@ -1,11 +1,10 @@
 architecture: arm
 battery: {removable: True, capacity: 2200, tech: 'Li-Po'}
-before_install: before_install_wt88047
+before_lineage_install: before_lineage_install_wt88047
 bluetooth: {spec: 4.0 + LE, profiles: [A2DP]}
 cameras:
 - {flash: 'LED', info: '8 MP'}
 - {flash: '', info: '2 MP'}
-carrier:
 channels: [weekly]
 codename: wt88047
 cpu: Cortex-A53

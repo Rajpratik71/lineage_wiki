@@ -4,14 +4,13 @@ bluetooth: {spec: 4.0 + LE}
 cameras:
 - {flash: 'LED', info: '16 MP'}
 - {flash: '', info: '2 MP'}
-carrier:
 channels: [nightly]
 codename: kltechnduo
 cpu: Krait 400
 cpu_cores: '4'
 cpu_freq: 2.5 GHz
 current_branch: 16.0
-custom_twrp_codename: kltechn
+custom_recovery_codename: kltechn
 depth: 8.1 mm (0.32 in)
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Home</kbd> + <kbd>Power</kbd>.
 gpu: Adreno 330
@@ -22,10 +21,6 @@ kernel: android_kernel_samsung_msm8974
 maintainers: [haggertk]
 models: [SM-G9006W, SM-G9008W, SM-G9009W]
 name: Galaxy S5 LTE Duos (G9006W/8W)
-network:
-- {tech: 2G, bands: '' }
-- {tech: 3G, bands: '' }
-- {tech: 4G, bands: '' }
 no_oem_unlock_switch: true
 peripherals: [Fingerprint reader, Heart rate sensor, Motion Coprocessor, Accelerometer, Gesture sensor,
   Gyroscope, Proximity sensor, Compass, Barometer, Hall effect sensor, RGB ambient light, Infrared sensor]

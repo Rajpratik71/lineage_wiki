@@ -4,14 +4,13 @@ bluetooth: {spec: 4.0 + LE}
 cameras:
 - {flash: 'LED', info: '16 MP'}
 - {flash: '', info: '2 MP'}
-carrier:  
 channels: [nightly]
 codename: klteactivexx
 cpu: Krait 400
 cpu_cores: '4'
 cpu_freq: 2.5 GHz
 current_branch: 16.0
-custom_twrp_codename: klte
+custom_recovery_codename: klte
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Home</kbd> + <kbd>Power</kbd>.
 gpu: Adreno 330
 image: klteactivexx.png

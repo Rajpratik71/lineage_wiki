@@ -114,10 +114,14 @@
         <td>{{ device.sdcard }}</td>
     </tr>
     {% endif %}
-    {% if device.screen %}
+    {% if device.screen != 'None' %}
     <tr>
         <th scope="row">Screen</td>
-        <td>{{ device.screen_res }} ({{ device.screen_ppi }} PPI)<br>{{ device.screen_tech }}</td>
+        <td>
+            {{ device.screen }}<br>
+            {{ device.screen_res }} ({{ device.screen_ppi }} PPI)<br>
+            {{ device.screen_tech }}
+        </td>
     </tr>
     {% endif %}
     {% if device.bluetooth %}

@@ -1,10 +1,9 @@
 architecture: arm
-battery: {removable: False, capacity: 2390}
+battery: {removable: False, capacity: 2390, tech: 'Li-Ion'}
 bluetooth: {spec: 4.0 + LE, profiles: [A2DP]}
 cameras:
 - {flash: 'LED', info: '8 MP'}
 - {flash: '', info: '2 MP'}
-carrier:
 channels: [discontinued]
 codename: thea
 cpu: Cortex-A7

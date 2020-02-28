@@ -4,14 +4,13 @@ bluetooth: {spec: '4.0'}
 cameras:
 - {flash: 'Dual LED', info: '13 MP'}
 - {flash: '', info: '8 MP'}
-carrier:
 channels: [nightly]
 codename: r7plus
 cpu: Cortex-A53
 cpu_cores: '8'
 cpu_freq: 1.5 GHz and 1.0 GHz
 current_branch: 16.0
-custom_twrp_link: https://androidfilehost.com/?fid=1395089523397922694
+custom_recovery_link: https://androidfilehost.com/?fid=1395089523397922694
 depth: 7.8 mm (0.31 in)
 download_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Power</kbd>.
 format_on_upgrade: true
@@ -20,7 +19,7 @@ height: 158 mm (6.22 in)
 image: r7plus.png
 install_method: fastboot_nexus
 kernel: android_kernel_oppo_msm8939
-maintainers: [maniac103, mikeioannina]
+maintainers: [maniac103]
 models: [R7plusf]
 name: R7 Plus (International)
 network:

@@ -1,6 +1,5 @@
 architecture: arm
-battery: {removable: False, capacity: 1785}
-before_install: before_install_xt897
+battery: {removable: False, capacity: 1785, tech: 'Li-Ion'}
 bluetooth: {spec: 4.0 + LE}
 cameras:
 - {flash: 'LED', info: '8 MP'}
@@ -12,7 +11,7 @@ cpu: Cortex-A9
 cpu_cores: '2'
 cpu_freq: 1.5 GHz
 current_branch: 14.1
-custom_twrp_codename: asanti
+custom_recovery_codename: asanti
 depth: 13.7 mm (0.54 in)
 download_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
   Quickly highlight 'AP fastboot' from the menu using the <kbd>Volume Down</kbd> button, and push the <kbd>Volume Up</kbd>.

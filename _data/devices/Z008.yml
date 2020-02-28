@@ -1,10 +1,9 @@
 architecture: {cpu: 'x86_64', userspace: 'x86'}
-battery: {removable: False, capacity: 3000}
+battery: {removable: False, capacity: 3000, tech: 'Li-Po'}
 bluetooth: {spec: '4.0', profiles: [A2DP]}
 cameras:
 - {flash: 'LED', info: '13 MP'}
 - {flash: '', info: '5 MP'}
-carrier:
 channels: [discontinued]
 codename: Z008
 cpu: Intel Atom

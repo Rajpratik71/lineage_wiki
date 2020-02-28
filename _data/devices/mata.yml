@@ -5,18 +5,18 @@ cameras:
 - {flash: 'Dual LED (dual tone)', info: '13 MP'}
 - {flash: 'Dual LED (dual tone)', info: 'Monochromatic 13 MP'}
 - {flash: '', info: '8 MP'}
-carrier:
 channels: [nightly]
 codename: mata
 cpu: Kryo
 cpu_cores: '8'
 cpu_freq: 4 x 2.45 GHz + 4 x 1.9 GHz
 current_branch: 16.0
-custom_twrp_link: https://download.invisiblek.org/mata/twrp-mata_11.img
+custom_recovery_link: https://www.androidfilehost.com/?fid=6006931924117938176
+custom_unlock_cmd: 'fastboot flashing unlock_critical'
 depth: 7.8 mm (0.31 in)
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
 gpu: Adreno 540
-height: 141.5 cm (5.57 in)
+height: 141.5 mm (5.57 in)
 image: mata.png
 install_method: fastboot_nexus
 is_ab_device: true
@@ -33,7 +33,7 @@ peripherals: [Fingerprint reader, Accelerometer, Gyroscope, Proximity sensor, Co
 ram: 4 GB
 recovery_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Power</kbd>.
 release: 2017-08
-screen: 85.4 cm (5.71 in)
+screen: 85.4 mm (5.71 in)
 screen_ppi: '504'
 screen_res: 1312x2560
 screen_tech: IPS LCD

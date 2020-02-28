@@ -4,7 +4,6 @@ bluetooth: {spec: '4.2', profiles: [A2DP + aptX HD]}
 cameras:
 - {flash: 'LED', info: '40 MP + 20 MP'}
 - {flash: '', info: '8 MP'}
-carrier:
 channels: [nightly]
 codename: charlotte
 cpu: Cortex-A73 & Cortex-A53
@@ -19,7 +18,7 @@ image: charlotte.png
 install_method: fastboot_huawei
 is_unlockable: false
 kernel: android_kernel_huawei_kirin970
-maintainers: [LuK1337]
+maintainers: [npjohnson]
 models: [CLT-AL00, CLT-AL01, CLT-L04, CLT-L09, CLT-L29, CLT-TL00, CLT-TL01]
 name: P20 Pro
 network:

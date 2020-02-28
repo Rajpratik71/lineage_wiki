@@ -4,14 +4,13 @@ bluetooth: {spec: '4.1', profiles: [A2DP]}
 cameras:
 - {flash: 'LED', info: '8 MP'}
 - {flash: '', info: '1.6 MP'}
-carrier:
 channels: [discontinued]
 codename: flounder_lte
 cpu: Denver
 cpu_cores: '2'
 cpu_freq: 2.3 GHz
 current_branch: 14.1
-custom_twrp_codename: flounder
+custom_recovery_codename: flounder
 depth: 7.95 mm (0.31 in)
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd> until the bootloader appears, then release the buttons.
   Use the volume buttons to scroll to "FASTBOOT" and press <kbd>Power</kbd> to select.

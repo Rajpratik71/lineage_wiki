@@ -4,7 +4,6 @@ bluetooth: {spec: '4.1', profiles: [A2DP]}
 cameras:
 - {flash: '', info: '8 MP'}
 - {flash: '', info: '2.1 MP'}
-carrier:
 channels: [discontinued]
 codename: gts210wifi
 cpu: Cortex-A53 & Cortex-A57
@@ -21,10 +20,6 @@ kernel: android_kernel_samsung_gts2
 maintainers: []
 models: [SM-T810]
 name: Galaxy Tab S2 9.7 (Wi-Fi)
-network:
-- {tech: 2G, bands: '' }
-- {tech: 3G, bands: '' }
-- {tech: 4G, bands: '' }
 peripherals: [Fingerprint reader, Accelerometer, Gyroscope, Compass, GPS]
 ram: 3 GB
 recovery_boot: With the device powered off, hold <kbd>Home</kbd> + <kbd>Volume Up</kbd> + <kbd>Power</kbd>.

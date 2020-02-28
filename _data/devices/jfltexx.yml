@@ -4,24 +4,23 @@ bluetooth: {spec: '4.0'}
 cameras:
 - {flash: 'LED', info: '13 MP'}
 - {flash: '', info: '2 MP'}
-carrier:
-channels: [discontinued]
+channels: [nightly]
 codename: jfltexx
 cpu: Krait 300
 cpu_cores: 4
 cpu_freq: 1.9GHz
-current_branch: 14.1
-custom_twrp_link: https://www.androidfilehost.com/?fid=962187416754463329
-depth: 7.9mm (0.31 in)
+current_branch: 16.0
+depth: 7.9 mm (0.31 in)
 download_boot: With the device powered off, hold <kbd>Home</kbd> + <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
+format_on_upgrade: true
 gpu: Adreno 320
-height: 136.6mm (5.38 in)
+height: 136.6 mm (5.4 in)
 image: jflte.png
 install_method: heimdall
 kernel: android_kernel_samsung_jf
-maintainers: []
-models: [GT-I9505, GT-I9505G, SGH-M919]
-name: Galaxy S4 (GT-I9505/G, SGH-M919)
+maintainers: [arco, npjohnson, side]
+models: [GT-I9505, GT-I9505G, SGH-I337M, SGH-M919]
+name: Galaxy S4 (GT-I9505/G, SGH-I337M, SGH-M919)
 network:
 - {tech: 2G, bands: '850 900 1800 1900 MHz GSM' }
 - {tech: 3G, bands: '850 900 1900 2100 MHz HSPA+' }
@@ -32,7 +31,7 @@ peripherals: [GPS, GLONASS, NFC, Infrared sensor, USB OTG, MHL 2.0, MHL HDMI, Ac
 ram: 2 GB
 recovery_boot: With the device powered off, hold <kbd>Home</kbd> + <kbd>Volume Up</kbd> + <kbd>Power</kbd>.
 release: 2013-04
-screen: 127mm (5in)
+screen: 127 mm (5 in)
 screen_ppi: 440
 screen_res: 1920x1080
 screen_tech: Pentile RGBG Full HD Super AMOLED
@@ -41,8 +40,9 @@ soc: Qualcomm Snapdragon 600
 storage: 16/32/64 GB
 tree: android_device_samsung_jfltexx
 type: phone
+uses_lineage_recovery: true
 vendor: Samsung
 vendor_short: samsung
-versions: [14.1]
-width: 69.8mm (2.75 in)
+versions: [14.1, 16.0]
+width: 69.8 mm (2.7 in)
 wifi: 802.11 a/b/g/n/ac, DLNA, Wi-Fi Display

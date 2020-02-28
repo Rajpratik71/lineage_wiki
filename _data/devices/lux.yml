@@ -1,17 +1,16 @@
 architecture: arm
-battery: {removable: False, capacity: 3630}
+battery: {removable: False, capacity: 3630, tech: 'Li-Ion'}
 bluetooth: {spec: 4.0 + LE}
 cameras:
 - {flash: 'Dual LED', info: '21 MP'}
 - {flash: '', info: '5 MP'}
-carrier:
 channels: [discontinued]
 codename: lux
 cpu: Cortex-A53
 cpu_cores: '8'
 cpu_freq: 1.7 GHz
 current_branch: 14.1
-custom_twrp_link: https://forum.xda-developers.com/showthread.php?t=3194656
+custom_recovery_link: https://forum.xda-developers.com/showthread.php?t=3194656
 depth: 10.9 mm (0.43 in)
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
 gpu: Adreno 405
@@ -22,10 +21,6 @@ kernel: android_kernel_motorola_msm8916
 maintainers: []
 models: [XT1562, XT1563]
 name: Moto X Play
-network:
-- {tech: 2G, bands: '' }
-- {tech: 3G, bands: '' }
-- {tech: 4G, bands: '' }
 peripherals: None
 ram: 2 GB
 recovery_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
