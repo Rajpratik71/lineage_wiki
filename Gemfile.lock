@@ -1,15 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.11.1)
-      i18n (~> 0.7)
+    activesupport (5.2.4.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.6)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -54,7 +54,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
-    minitest (5.13.0)
+    minitest (5.14.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.1)
@@ -74,14 +74,14 @@ GEM
       libv8 (~> 3.16.14.15)
       ref
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.7)
       thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (= 4.2.11.1)
+  activesupport (= 5.2.4.3)
   jekyll (= 3.8.5)
   jekyll-redirect-from (= 0.12.1)
   jekyll-relative-links (= 0.6.0)
@@ -96,4 +96,4 @@ DEPENDENCIES
   therubyracer (= 0.12.3)
 
 BUNDLED WITH
-   2.0.2
+   1.17.3
