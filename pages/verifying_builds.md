@@ -13,7 +13,7 @@ All official builds from LineageOS are signed with our private keys. You can ver
 Download the verifier and install its dependencies:
 
 ```
-git clone https://github.com/LineageOS/update_verifier
+git clone --depth 1 https://github.com/LineageOS/update_verifier
 cd update_verifier
 pip install -r requirements.txt
 ```

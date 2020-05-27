@@ -39,7 +39,7 @@ brotli --decompress --output=system.new.dat system.new.dat.br
 You now need to get a copy of `sdat2img`. This script can convert the content of block-based OTAs into dumps that can be mounted. `sdat2img` is available at the following git repository that you can clone with:
 
 ```
-git clone https://github.com/xpirt/sdat2img
+git clone --depth 1 https://github.com/xpirt/sdat2img
 ```
 
 Once you have obtained `sdat2img`, use it to extract the system image:
