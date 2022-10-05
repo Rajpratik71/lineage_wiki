@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "4.0.0"
+gem "jekyll", "3.9.0"
 gem "therubyracer", "0.12.3"
 
 group :test do
@@ -14,7 +14,7 @@ group :jekyll_plugins do
    gem 'jekyll-sass-converter', '= 1.5.2'
    gem 'jekyll-seo-tag', '= 2.6.1'
    gem 'jekyll-sitemap', '= 1.3.0'
-   gem 'kramdown', '= 2.3.0'
+   gem 'kramdown', '= 2.3.1'
    gem 'liquid', '= 4.0.0'
    gem 'listen', '= 3.1.5'
    gem 'rouge', '= 3.11.0'
