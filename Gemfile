@@ -8,7 +8,7 @@ group :test do
 end
 
 group :jekyll_plugins do
-   gem 'activesupport', '= 5.2.4.3'
+   gem 'activesupport', '= 6.1.7.1'
    gem 'jekyll-redirect-from', '= 0.15.0'
    gem 'jekyll-relative-links', '= 0.6.1'
    gem 'jekyll-sass-converter', '= 1.5.2'
